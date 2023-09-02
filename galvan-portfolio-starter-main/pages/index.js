@@ -11,6 +11,7 @@ import { motion } from "framer-motion";
 //variants
 import { fadeIn } from "../variants";
 import { Profiler } from "react";
+import ParticlesContainer from "../components/ParticlesContainer";
 
 const Home = () => {
   return (
@@ -26,8 +27,8 @@ const Home = () => {
             exit="hidden"
             className="h1"
           >
-            Transforming Ideas <br /> Into{" "}
-            <span className="text-accent">Digital Reality</span>
+            Building the <br />
+            <span className="text-accent"> Digital Future</span>
           </motion.h1>
           {/* subtitle */}
           <motion.p
@@ -37,9 +38,10 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Enim veniam excepteur enim culpa magna elit esse nostrud elit. Id
-            pariatur aute consectetur officia eu adipisicing irure dolore minim
-            aute deserunt do exercitation.
+            Welcome to my digital playground, where I code dreams into reality.
+            From elegant websites to dynamic web applications, I'm your web
+            development wizard. Let's embark on a journey through lines of code,
+            where innovation knows no boundaries.
           </motion.p>
           {/* btn */}
           <div className="flex justify-center xl:hidden relative">
@@ -61,7 +63,7 @@ const Home = () => {
         {/* bg-image */}
         <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"></div>
         {/* Particles */}
-        <div>Particles</div>
+        <ParticlesContainer />
         {/* Avatar */}
         <motion.div
           variants={fadeIn("up", 0.5)}
