@@ -24,14 +24,16 @@ const Work = () => {
               My Works<span className="text-accent">.</span>
             </motion.h2>
             <motion.p
-            variants={fadeIn("up", 0.4)}
-            initial="hidden"
-            animate="show"
-            exit="hidden" className="mb-4 max-w-[400px] mx-auto lg:mx-0">
-              Officia mollit ex dolore et veniam ea voluptate commodo dolore
-              anim eu aliquip. Aliqua sunt nisi exercitation non sint irure do
-              duis. Veniam veniam nulla do exercitation qui exercitation nisi.
-              Dolore cillum sunt laborum enim.
+              variants={fadeIn("up", 0.4)}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              className="mb-4 max-w-[400px] mx-auto lg:mx-0"
+            >
+              Welcome to my portfolio! Here, I showcase my creative projects and
+              professional achievements. I'm passionate about what I do, and I'm
+              excited to share my work with you. Explore below to get a glimpse
+              of my journey and the projects I've undertaken.
             </motion.p>
           </div>
           {/* service slider */}
@@ -39,7 +41,9 @@ const Work = () => {
             variants={fadeIn("down", 0.6)}
             initial="hidden"
             animate="show"
-            exit="hidden" className="w-full xl:max-w-[65%]">
+            exit="hidden"
+            className="w-full xl:max-w-[65%]"
+          >
             <WorkSlider />
           </motion.div>
         </div>
