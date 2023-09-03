@@ -9,13 +9,13 @@ const Header = () => {
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-y-6 py-8">
           <Link href={"/"}>
-            <Image
-              src={"/logo.svg"}
-              width={220}
-              height={48}
-              alt="logo"
-              priority={true}
-            ></Image>
+            <div className="text-4xl group">
+              <span className="font-bold">
+                rodnie
+              </span>
+              <span className="font-thin group-hover:font-bold  transition-all duration-150">galvan</span>
+              <span className="text-accent">.</span>
+            </div>
           </Link>
           <Socials />
         </div>
