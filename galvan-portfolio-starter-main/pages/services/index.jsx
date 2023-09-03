@@ -32,8 +32,8 @@ const Services = () => {
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
               I specialize in providing top-notch services to help you achieve
-              your goals. Whether it's web development, graphic design, or
-              digital marketing, I'm here to turn your ideas into reality.
+              your goals. Whether it&apos;s web development, graphic design, or
+              digital marketing, I&apos;m here to turn your ideas into reality.
             </motion.p>
           </div>
           {/* service slider */}
