@@ -25,14 +25,15 @@ const Services = () => {
               My Services<span className="text-accent">.</span>
             </motion.h2>
             <motion.p
-            variants={fadeIn("up", 0.4)}
-            initial="hidden"
-            animate="show"
-            exit="hidden" className="mb-4 max-w-[400px] mx-auto lg:mx-0">
-              Officia mollit ex dolore et veniam ea voluptate commodo dolore
-              anim eu aliquip. Aliqua sunt nisi exercitation non sint irure do
-              duis. Veniam veniam nulla do exercitation qui exercitation nisi.
-              Dolore cillum sunt laborum enim.
+              variants={fadeIn("up", 0.4)}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              className="mb-4 max-w-[400px] mx-auto lg:mx-0"
+            >
+              I specialize in providing top-notch services to help you achieve
+              your goals. Whether it's web development, graphic design, or
+              digital marketing, I'm here to turn your ideas into reality.
             </motion.p>
           </div>
           {/* service slider */}
@@ -40,7 +41,9 @@ const Services = () => {
             variants={fadeIn("down", 0.6)}
             initial="hidden"
             animate="show"
-            exit="hidden" className="w-full xl:max-w-[65%]">
+            exit="hidden"
+            className="w-full xl:max-w-[65%]"
+          >
             <ServiceSlider />
           </motion.div>
         </div>

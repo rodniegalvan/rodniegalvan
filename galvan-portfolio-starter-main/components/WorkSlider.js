@@ -5,19 +5,19 @@ const workSlider = {
       images: [
         {
           title: "title",
-          path: "/thumb1.jpg",
+          path: "/wip.png",
         },
         {
           title: "title",
-          path: "/thumb2.jpg",
+          path: "/wip.png",
         },
         {
           title: "title",
-          path: "/thumb3.jpg",
+          path: "/wip.png",
         },
         {
           title: "title",
-          path: "/thumb4.jpg",
+          path: "/wip.png",
         },
       ],
     },
@@ -25,19 +25,19 @@ const workSlider = {
       images: [
         {
           title: "title",
-          path: "/thumb4.jpg",
+          path: "/wip.png",
         },
         {
           title: "title",
-          path: "/thumb1.jpg",
+          path: "/wip.png",
         },
         {
           title: "title",
-          path: "/thumb2.jpg",
+          path: "/wip.png",
         },
         {
           title: "title",
-          path: "/thumb3.jpg",
+          path: "/wip.png",
         },
       ],
     },
@@ -72,7 +72,7 @@ const WorkSlider = () => {
             <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer">
               {slide.images.map((image, index) => {
                 return (
-                  <div className="relative rounded-lg overflow-hidden flex items-center justify-center group">
+                  <div className="relative rounded-lg border-2 border-indigo-500/100 overflow-hidden flex items-center justify-center group">
                     <div className="flex items-center justify-center relative overflow-hidden group">
                       {/* image */}
                       <Image src={image.path} width={500} height={300} alt="" />
