@@ -131,7 +131,7 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            Hello, I'm Rodnie Galvan, and I've embarked on a digital journey
+            Hello, I&apos;m Rodnie Galvan, and I&apos;ve embarked on a digital journey
             driven by a passion for problem-solving. Coding is my creative
             outlet, and I thrive on challenges. With each line of code, I
             transform complexity into elegance. Welcome to my world, where

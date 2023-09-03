@@ -31,9 +31,9 @@ const Work = () => {
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
               Welcome to my portfolio! Here, I showcase my creative projects and
-              professional achievements. I'm passionate about what I do, and I'm
+              professional achievements. I&apos;m passionate about what I do, and I&apos;m
               excited to share my work with you. Explore below to get a glimpse
-              of my journey and the projects I've undertaken.
+              of my journey and the projects I&apos;ve undertaken.
             </motion.p>
           </div>
           {/* service slider */}
