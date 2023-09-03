@@ -39,8 +39,8 @@ const Home = () => {
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
             Welcome to my digital playground, where I code dreams into reality.
-            From elegant websites to dynamic web applications, I'm your web
-            development wizard. Let's embark on a journey through lines of code,
+            From elegant websites to dynamic web applications, I&apos;m your web
+            development wizard. Let&apos;s embark on a journey through lines of code,
             where innovation knows no boundaries.
           </motion.p>
           {/* btn */}
