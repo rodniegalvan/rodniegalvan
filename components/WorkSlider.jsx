@@ -4,20 +4,20 @@ const workSlider = {
     {
       images: [
         {
-          title: "title",
-          path: "/launchSoon.png",
+          title: "Shopify",
+          path: "/thumb1.jpg",
         },
         {
           title: "title",
-          path: "/launchSoon.png",
+          path: "/thumb2.jpg",
         },
         {
           title: "title",
-          path: "/launchSoon.png",
+          path: "/thumb2.jpg",
         },
         {
           title: "title",
-          path: "/launchSoon.png",
+          path: "/thumb2.jpg",
         },
       ],
     },
@@ -25,24 +25,29 @@ const workSlider = {
       images: [
         {
           title: "title",
-          path: "/launchSoon.png",
+          path: "/thumb2.jpg",
         },
         {
           title: "title",
-          path: "/launchSoon.png",
+          path: "/thumb2.jpg",
         },
         {
           title: "title",
-          path: "/launchSoon.png",
+          path: "/thumb2.jpg",
         },
         {
           title: "title",
-          path: "/launchSoon.png",
+          path: "/thumb2.jpg",
         },
       ],
     },
   ],
 };
+
+const slideLinks = [
+  "https://wildsideseats.net/", // Link for the first image
+  "https://launching-soon-mu.vercel.app/", // Link for the rest of the images
+];
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -66,20 +71,22 @@ const WorkSlider = () => {
       modules={[Pagination]}
       className="h-[240px sm:h-[480px]"
     >
-      {workSlider.slides.map((slide, index) => {
+      {workSlider.slides.map((slide, slideIndex) => {
         return (
-          <SwiperSlide key={index}>
+          <SwiperSlide key={slideIndex}>
             <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer">
-              {slide.images.map((image, index) => {
+              {slide.images.map((image, imageIndex) => {
+                const link = imageIndex === 0 ? slideLinks[0] : slideLinks[1];
+
                 return (
-                  <div className="relative rounded-lg overflow-hidden flex items-center justify-center group">
+                  <div
+                    key={imageIndex}
+                    className="relative rounded-lg overflow-hidden flex items-center justify-center group"
+                  >
                     <div
                       className="flex items-center justify-center relative overflow-hidden group"
                       onClick={() => {
-                        window.open(
-                          "https://launching-soon-mu.vercel.app/",
-                          "_blank"
-                        );
+                        window.open(link, "_blank");
                       }}
                     >
                       {/* image */}
