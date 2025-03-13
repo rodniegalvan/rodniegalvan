@@ -11,7 +11,7 @@ const Header = () => {
           <Link href={"/"}>
             <div className="text-4xl group">
               <span className="font-bold">
-                rodnie
+                rs
               </span>
               <span className="font-thin group-hover:font-bold  transition-all duration-150">galvan</span>
               <span className="text-accent">.</span>

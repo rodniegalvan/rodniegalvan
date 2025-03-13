@@ -6,10 +6,12 @@ const workSlider = {
         {
           title: "Shopify",
           path: "/thumb1.jpg",
+          link: "https://wildsideseats.net/",
         },
         {
-          title: "title",
-          path: "/thumb2.jpg",
+          title: "Web Scraping",
+          path: "/web-scraping.png",
+          link: "https://rodnie-web-scraping.vercel.app/",
         },
         {
           title: "title",
@@ -44,10 +46,7 @@ const workSlider = {
   ],
 };
 
-const slideLinks = [
-  "https://wildsideseats.net/", // Link for the first image
-  "https://launching-soon-mu.vercel.app/", // Link for the rest of the images
-];
+const defaultLinks = "https://launching-soon-mu.vercel.app/";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -76,7 +75,6 @@ const WorkSlider = () => {
           <SwiperSlide key={slideIndex}>
             <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer">
               {slide.images.map((image, imageIndex) => {
-                const link = imageIndex === 0 ? slideLinks[0] : slideLinks[1];
 
                 return (
                   <div
@@ -86,7 +84,7 @@ const WorkSlider = () => {
                     <div
                       className="flex items-center justify-center relative overflow-hidden group"
                       onClick={() => {
-                        window.open(link, "_blank");
+                        window.open(image.link ? image.link : defaultLinks, "_blank");
                       }}
                     >
                       {/* image */}

@@ -25,11 +25,10 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h1"
           >
-            Building the <br />
-            <span className="text-accent"> Digital Future</span>
-          </motion.h1>
+              <span className="text-[1rem] font-light">Hi, I&apos;m <br /></span>
+              <span className="text-accent h1 text-[4rem] font-bold">Rodnie Galvan</span>
+              </motion.h1>
           {/* subtitle */}
           <motion.p
             variants={fadeIn("down", 0.3)}
@@ -38,10 +37,9 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Welcome to my digital playground, where I code dreams into reality.
-            From elegant websites to dynamic web applications, I&apos;m your web
-            development wizard. Let&apos;s embark on a journey through lines of code,
-            where innovation knows no boundaries.
+             A Fullstack Developer who values clean, maintainable, and efficient
+            code. I build scalable and high-performance applications with best
+            practices in mind.
           </motion.p>
           {/* btn */}
           <div className="flex justify-center xl:hidden relative z-30">

@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import React, { useState } from "react";
 
 // icons
@@ -44,12 +45,12 @@ const aboutData = [
     title: "awards",
     info: [
       {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
+        title: "Magna Cum Laude - West Visayas State University",
+        stage: "2022 - 2023",
       },
       {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
+        title: "Honoree - High School",
+        stage: "2013 - 2019",
       },
     ],
   },
@@ -57,36 +58,20 @@ const aboutData = [
     title: "experience",
     info: [
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
+        title: "JR Full Stack Developer - Affinity Capital (Hybrid)",
+        stage: "2023 – 2025"
       },
       {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
+        title: "Software Developer - Spring Valley Tech Corp (Bago City)",
+        stage: "2023"
       },
       {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
-      },
+        title: "Freelance Shopify Developer",
+        stage: "2020 – 2022"
+      }
     ],
-  },
-  {
-    title: "credentials",
-    info: [
-      {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
-      },
-      {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
-      },
-      {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
-      },
-    ],
-  },
+
+  }
 ];
 
 //components
@@ -107,7 +92,7 @@ const About = () => {
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -left-[300px]"
+        className="hidden xl:flex absolute bottom-0 -left-[300px] h-[80%] min-w-[80rem]"
       >
         <Avatar />
       </motion.div>
@@ -119,30 +104,30 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2"
+            className="h2 z-10"
           >
-            Meet the Artisan of the <span className="text-accent">Digital</span>{" "}
-            realm
+            Breaking <span className="text-accent"> Problems</span>, Not Code.
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 z-10"
           >
-            Hello, I&apos;m Rodnie Galvan, and I&apos;ve embarked on a digital journey
-            driven by a passion for problem-solving. Coding is my creative
-            outlet, and I thrive on challenges. With each line of code, I
-            transform complexity into elegance. Welcome to my world, where
-            digital possibilities have no bounds.
+            I&apos;m Rodnie Galvan, a Full Stack Developer from the Philippines
+            with a degree in Computer Science. I have experience working in
+            cross-functional teams, solving complex problems, and building
+            efficient, scalable solutions.
           </motion.p>
           {/* counters */}
           <motion.div
             variants={fadeIn("right", 0.6)}
             initial="hidden"
             animate="show"
-            exit="hidden" className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8">
+            exit="hidden"
+            className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
+          >
             <div className="flex flex-1 xl:gap-x-6">
               {/* experience */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
@@ -183,13 +168,15 @@ const About = () => {
             </div>
           </motion.div>
         </div>
-                  {/* info */}
+        {/* info */}
         <motion.div
-            variants={fadeIn("left", 0.4)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"div className="flex flex-col w-full xl:max-w-[48%] h-[480px]">
-
+          variants={fadeIn("left", 0.4)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          div
+          className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
+        >
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => {
               return (
